@@ -190,22 +190,37 @@ section{
     color: skyblue;
 }
 
-#bloghead{
+#bloghead {
     text-align: center;
     color: teal;
     margin-bottom: 20px;
 }
-.blogs-card{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:30px;
+
+.blogs-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-.blog{
+
+.blog {
     background-color: whitesmoke;
-    border-color: burlywood;
+    border: 1px solid burlywood; 
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 20px;
+    
+    /* Layout trick to push the "Read more" link to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* New addition to satisfy the strict 2-line rule */
+.excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Restricts the text to exactly 2 lines */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-bottom: 15px; /* Adds clean spacing above the link */
 }
 #contacthead{
     text-align: center;
