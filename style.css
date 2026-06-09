@@ -175,6 +175,12 @@ section{
     justify-content: center;
     gap:10px;
 }
+#tide a{
+    margin-top: 20px;
+}
+#plantpal-ai a{
+    margin-top: 10px;
+}
 .tools-used{
     border: 1px solid burlywood;
     border-radius: 30px;
@@ -207,20 +213,16 @@ section{
     border: 1px solid burlywood; 
     border-radius: 20px;
     padding: 20px;
-    
-    /* Layout trick to push the "Read more" link to the bottom */
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
 }
-
-/* New addition to satisfy the strict 2-line rule */
 .excerpt {
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Restricts the text to exactly 2 lines */
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;  
     overflow: hidden;
-    margin-bottom: 15px; /* Adds clean spacing above the link */
+    margin-bottom: 15px; 
 }
 #contacthead{
     text-align: center;
