@@ -28,7 +28,7 @@ try:
         is_hot = temp > 35
         is_raining = "rain" in weather_condition or "drizzle" in weather_condition
 
-        if is_hot or is_raining:
+        if True:
             subject = f"⚠️ Weather Alert for {CITY}!"
             body = f"Alert conditions met!\n\nTemperature: {temp}°C\nCondition: {description.capitalize()}\n\nStay safe!"
             
