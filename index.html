@@ -65,8 +65,20 @@
         </div>
     </section>
     <section id="projects" class="hidden">
-        <h2 id="projectshead">Projects</h2>
-        <div class="project-card" class="hidden">
+    <h2 id="projectshead">Projects</h2>
+    
+    <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="code">Code</button>
+    </div>
+
+    <p class="project-count">Showing <span id="current-count">2</span> of <span id="total-count">2</span> projects</p>
+
+    <div class="projects-card-container">
+        
+        <div class="project-card-item" data-category="design">
             <div id="tide">
                 <h4 class="project-title">Tide AI</h4>
                 <p id="tide-des">Designed a task management application prototype in Figma featuring task organization, progress tracking, reusable components, and interactive user flows.</p>
@@ -75,8 +87,15 @@
                     <p class="tools-used">Prototyping</p>
                     <p class="tools-used">Smart Animate</p>
                 </div>
-                <a href="https://www.figma.com/proto/UcYIVShyLHcBwsI8vLGFAs/Tide-task-manager?node-id=65-1193&t=o43zt18SHSL4LTQ5-1" target="_blank">View prototype</a>
+                <a href="#" class="preview-link">Live Preview →</a>
+                <div class="project-media">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="240" src="https://embed.figma.com/design/UcYIVShyLHcBwsI8vLGFAs/Tide-task-manager?node-id=31-221&embed-host=share" allowfullscreen></iframe>
+                </div>
             </div>
+        </div>
+
+
+        <div class="project-card-item" data-category="web">
             <div id="plantpal-ai">
                 <h4 class="project-title">PlantPal AI</h4>
                 <p id="plantpal-des">PlantPal AI is a smart plant care assistant designed to help users identify plant issues and receive personalized care recommendations. The project was developed as a prototype to demonstrate how AI can make plant care more accessible and efficient.</p>
@@ -88,7 +107,27 @@
                 <a href="images/plantpal ai.png" target="_blank">View Design</a>
             </div>
         </div>
-    </section>
+        <div class="project-card-item" data-category="code">
+        <div id="github-projects">
+
+        <h4 class="project-title">GitHub Projects</h4>
+
+
+        <div id="github-projects-list">
+            <!-- JavaScript will automatically insert repositories here -->
+        </div>
+
+        <a href="https://github.com/Swathi2626" target="_blank">
+            View GitHub Profile →
+        </a>
+
+    </div>
+</div>
+    
+</div>
+
+    </div>
+</section>
     <section id="blogs" class="hidden">
         <h2 id="bloghead">Blogs</h2>
         <div class="blogs-card">
